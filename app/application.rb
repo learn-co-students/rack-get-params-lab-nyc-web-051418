@@ -25,6 +25,7 @@ class Application
 
     elsif req.path.match(/add/)
       requested_item = req.params["item"]
+      #"item" is the key in the pair
       #this line assigns requested_item the value of "item" in the hash
 
       if @@items.include?(requested_item)
